@@ -9,7 +9,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Flutter Playgroud'),
+        title: const Text('Flutter Playgroud!!'),
         centerTitle: true,
         backgroundColor: Colors.blue[500],
       ),
