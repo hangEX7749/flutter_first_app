@@ -18,21 +18,11 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.blue[500] ,
       ),
-      body: Center(
-        child: ElevatedButton.icon(
-          onPressed: () {},
-          icon: const Icon(
-            Icons.mail,
-            color: Colors.amber,
-          ),
-          style: ElevatedButton.styleFrom(
-            foregroundColor: const Color.fromARGB(255, 199, 134, 210),
-            shadowColor: const Color.fromARGB(255, 155, 201, 239),
-            elevation: 20.0,
-          ),
-          label: const Text('here'),
-          //color: Colors.purple,
-        ),
+      body: Container(
+        margin: const EdgeInsets.all(20),
+        padding: const EdgeInsets.all(40),
+        color: Colors.grey,
+        child: const Text("Hello"),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {  },
