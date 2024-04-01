@@ -19,29 +19,33 @@ class Home extends StatelessWidget {
           children: <Widget>[
             Row(
               children: [
-                Container(
-                  padding: const EdgeInsets.all(20),
-                  color: Colors.grey,
-                  child: const Text("Hello"),
+                Expanded(
+                  flex: 8,
+                  child: Image.asset('assets/frieren.jpg')
                 ),
-                Container(
-                  padding: const EdgeInsets.all(20),
-                  color: Colors.green,
-                  child: const Text("Hello"),
+                Expanded(
+                  flex: 3, //Percentage width of the row container
+                  child: Container(
+                    padding: const EdgeInsets.all(20),
+                    color: Colors.grey,
+                    child: const Text("1"),
+                  ),
                 ),
-              ],
-            ),
-            Row(
-              children: [
-                Container(
-                  padding: const EdgeInsets.all(20),
-                  color: Colors.grey,
-                  child: const Text("Hello"),
+                Expanded(
+                  flex: 2,
+                  child: Container(
+                    padding: const EdgeInsets.all(20),
+                    color: Colors.green,
+                    child: const Text("2"),
+                  ),
                 ),
-                Container(
-                  padding: const EdgeInsets.all(20),
-                  color: Colors.green,
-                  child: const Text("Hello"),
+                Expanded(
+                  flex: 1,
+                  child: Container(
+                    padding: const EdgeInsets.all(20),
+                    color: Colors.amber,
+                    child: const Text("3"),
+                  ),
                 ),
               ],
             ),
